@@ -4,11 +4,15 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-/* common style */
+/* ========common style====== */
 .common-container {
   max-width: 1200px;
   margin: 0 auto;
 }
+.common-padding {
+  padding: 0px 70px;
+}
+/*  all button style */
 .common-button {
   background-color: #1d4ed8;
   padding: 10px 28px;
@@ -19,20 +23,34 @@
   font-weight: 700;
 }
 
-/* navigation bar style */
+.common-outline-button{
+  background-color: white;
+  padding: 10px 28px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #2563EB;
+  color: #1d4ed8;
+  font-weight: 700;
+}
 
+/* ========= navigation bar style =========*/
+
+/* navbar */
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 50px;
-  border: 1px solid #0000000F;
+  padding: 12px 70px;
+  border: 1px solid #0000000f;
 }
+
+/* nav logo */
 .nav-container img {
   height: 45px;
   width: auto;
 }
 
+/* nav menu */
 nav ul {
   display: flex;
   align-items: center;
@@ -54,10 +72,14 @@ nav ul li:hover {
   background-color: #d1d0d0;
 }
 
-/* hero section style */
+
+/* ======== hero section style ====== */
+
+
+/* hero banner */
 .hero-image {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
     url("./assets/banner.jpg");
   height: 90vh;
   background-position: center;
@@ -68,7 +90,7 @@ nav ul li:hover {
   justify-content: center;
   align-items: center;
 }
-.hero-container{
+.hero-container {
   text-align: center;
   height: 100%;
   display: flex;
@@ -76,28 +98,221 @@ nav ul li:hover {
   justify-content: space-between;
 }
 
+
+/* hero text container */
+
 .hero-text {
   padding-top: 16%;
   display: grid;
   gap: 15px;
- 
 }
-.hero-text h2{
-  color:#ffffffFF;
+.hero-text h2 {
+  color: #ffffffff;
   font-size: 52px;
   font-weight: 700;
 }
-.hero-text p{
+.hero-text p {
   max-width: 600px;
   margin: 0 auto;
- color: white;
+  color: white;
   font-size: 14px;
   font-weight: 250px;
   padding-left: 40px;
   padding-right: 40px;
 }
-.hero-button{
+
+/* hero button container */
+.hero-button {
   padding-bottom: 10%;
 }
 
+/*============ speaker section style ========*/
+
+/* speaker container */
+
+.speaker-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-bottom: 70px;
+}
+
+/* speaker heading */
+
+.speaker-heading {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 45px;
+  
+}
+
+.speaker-heading h2{
+  font-size: 50px;
+  font-weight: 700;
+  color: #000102;
+}
+
+/* speaker cards */
+
+.speaker-card {
+  background-color: #ffffffff;
+  border: 1px solid #e5e7eb;
+}
+
+.speaker-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.speaker-card-text {
+  padding: 20px;
+  display: grid;
+  gap: 8px;
+  text-align: left;
+}
+.speaker-card span {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 600;
+}
+.speaker-card h2 {
+  color: #0d1b2a;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.speaker-card p {
+  color: #575757;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/*====== pricing section style ====== */
+
+/* pricing heading */
+
+.pricing-heading{
+text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: grid;
+  gap: 15px;
+}
+
+.pricing-heading h2{
+  font-size: 48px;
+  font-weight: 700;
+  color: #0D1B2A;
+}
+
+.pricing-heading p{
+  font-size: 15px;
+  font-weight: 300;
+  color: #575757;
+}
+
+/* pricing cards */
+
+.pricing-cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  padding: 30px 50px 0px 50px;
+  
+}
+
+/* card standard ,pro and team */
+
+.card{
+  border: 1px solid #e5e7ebFF;
+  padding: 30px;
+  border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ background-color: #FFFFFF;
+}
+
+.card-pro{
+  background-color: #0D1B2A;
+  border:1px solid #0D1B2A ;
+  color: #FFFFFF;
+}
+
+.card hr{
+    border: none;
+    border-top: 1px solid #d1d5db;
+    width: 100%;
+}
+
+/* card text standard ,pro and team */
+
+.card-text{
+  display: grid;
+  gap: 8px;
+}
+
+.card-text-p{
+  font-size: 13px;
+  font-weight: 600;
+  color: #888888;
+}
+
+.card-text-p-pro{
+  font-size: 13px;
+  font-weight: 600;
+  color:#93C5FD ;
+}
+
+
+.card-text-h2{
+  font-size: 40px;
+  font-weight: 700;
+  color: #0D1B2A;
+}
+
+.card-text-h2-pro{
+    font-size: 40px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.card-text-p2{
+  font-size: 12px;
+  font-weight: 400;
+  color:#888888 ;
+}
+
+.card-text-p2-pro{
+   font-size: 12px;
+  font-weight: 400;
+  columns: #FFFFFF;
+}
+
+
+/* card  ul standard ,pro and team  */
+
+.pricing-cards ul{
+  list-style: inside;
+  font-size: 14px;
+  font-weight: 300;
+  display: grid;
+  gap: 10px;
+  color: #333333;
+}
+
+.pricing-cards .ul-pro{
+  color: #FFFFFF;
+}
+
+.pricing-cards ul li::marker{
+  color: #1d4ed8;
+}
+
+
+/* card button standard ,pro and team */
+
+.button-team{
+  border: 1px solid #0D1B2A;
+  color: #0D1B2A;
+}
 

@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Devconf 2026</title>
+
+    <!--====== link css====== -->
+
     <link rel="stylesheet" href="./style.css" />
-    <!-- google font -->
+
+    <!-- ========google font======== -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,12 +19,16 @@
     />
   </head>
   <body>
-    <!-- navigation bar start -->
+    <!-- ========= navigation bar star t========= -->
+
     <nav>
       <div class="nav-container common-container">
         <!-- logo -->
+
         <img src="./assets/logo.png" alt="logo Devconf 2026" />
+
         <!-- navmenu -->
+
         <ul>
           <li><a href="#">Speakers</a></li>
           <li><a href="#">Schedule</a></li>
@@ -27,16 +36,23 @@
           <li><a href="#">Venue</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
+
         <!-- button -->
+
         <button class="common-button">Register Now</button>
       </div>
     </nav>
-    <!-- navigation bar end -->
+    <!-- =========== navigation bar end ========= -->
 
-    <!-- hero section start -->
+    <!--======== hero section start======== -->
+
     <header class="common-container">
+      <!-- hero banner -->
+
       <div class="hero-image">
         <div class="hero-container">
+          <!-- hero text -->
+
           <div class="hero-text">
             <h2>Code. <em>Connect</em>. Create</h2>
             <p>
@@ -45,12 +61,139 @@
               hands-on workshops, and meaningful connections.
             </p>
           </div>
+
+          <!-- hero button -->
+
           <div class="hero-button">
             <button class="common-button">Register Now</button>
           </div>
         </div>
       </div>
     </header>
-    <!-- hero section end -->
+
+    <!-- ==========hero section end====== -->
+
+    <main>
+      <!--====== speaker section start========= -->
+
+      <section class="common-container common-padding">
+        <div class="speaker-heading">
+          <!-- speaker section heading -->
+          <h2>Meet the Speakers</h2>
+        </div>
+
+        <!-- speaker cards -->
+        <div class="speaker-container">
+          <!-- andrej card-->
+          <div class="speaker-card">
+            <img src="./assets/andrej.png" alt="andrej" />
+            <div class="speaker-card-text">
+              <span>AI / ML</span>
+              <h3>Andrej Karpathy</h3>
+              <p>Pretraining team, Anthropic</p>
+            </div>
+          </div>
+          <!-- demis card -->
+          <div class="speaker-card">
+            <img src="./assets/demis.png" alt="demis" />
+            <div class="speaker-card-text">
+              <span>Cloud & DevOps</span>
+              <h3>Demis Hassabis</h3>
+              <p>Co-Founder and CEO, Google DeepMind</p>
+            </div>
+          </div>
+          <!-- gray card -->
+          <div class="speaker-card">
+            <img src="./assets/gary.png" alt="gray" />
+
+            <div class="speaker-card-text">
+              <span>Frontend</span>
+              <h3>Gary Marcus</h3>
+              <p>Staff Engineer, Vercel</p>
+            </div>
+          </div>
+          <!-- mustafa card -->
+          <div class="speaker-card">
+            <img src="./assets/mustafa.png" alt="mustafa" />
+            <div class="speaker-card-text">
+              <span>Security</span>
+              <h3>Mustafa Suleyman</h3>
+              <p>CEO of Microsoft AI</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--======== speaker section end ======-->
+
+      <!-- =======pricing section start======= -->
+      <section class="common-container common-padding">
+        <!-- pricing heading -->
+        <div class="pricing-heading">
+          <h2>Secure Your Spot</h2>
+          <p>Early-bird pricing ends August 15, 2026.</p>
+        </div>
+
+        <!-- pricing cards -->
+        <div class="pricing-cards">
+          <!-- pricing-card-standard -->
+          <div class="card">
+            <div class="card-text">
+              <p class="card-text-p">STANDARD</p>
+              <h2 class="card-text-h2">$399</h2>
+              <p class="card-text-p2">per person</p>
+            </div>
+            <hr>
+            <div>
+              <ul>
+                <li>Access to all 3 conference days</li>
+                <li>48 curated technical talks</li>
+                <li>2 workshop sessions</li>
+                <li>Networking lunch & coffee breaks</li>
+                <li>Conference swag bag</li>
+                <li>Digital recordings (30 days)</li>
+              </ul>
+            </div>
+            <button class="common-outline-button">Get Standard</button>
+          </div>
+          <!-- pricing-card-pro -->
+          <div class="card card-pro">
+            <div class="card-text">
+              <p class="card-text-p-pro">PRO</p>
+              <h2 class="card-text-h2-pro">$749</h2>
+              <p class="card-text-p2-pro">per person</p>
+            </div>
+            <hr>
+            <ul class="ul-pro">
+              <li>Everything in Standard</li>
+              <li>Unlimited workshop access</li>
+              <li>Speaker meet & greet</li>
+              <li>VIP networking dinner</li>
+              <li>Lifetime recording access</li>
+              <li>1-on-1 mentorship (30 min)</li>
+            </ul>
+            <button class="common-button">Get Pro</button>
+          </div>
+          <!-- pricing-card-team -->
+          <div class="card">
+            <div class="card-text">
+              <p class="card-text-p">TEAM</p>
+              <h2 class="card-text-h2">$5,999</h2>
+              <p class="card-text-p2">up to 10 people</p>
+            </div>
+            <hr>
+            <ul>
+              <li>Everything in Pro (10 seats)</li>
+              <li>Dedicated team lounge access</li>
+              <li>Private workshop booking</li>
+              <li>Company logo on event page</li>
+              <li>Recruitment booth (1 day)</li>
+              <li>Priority customer support</li>
+            </ul>
+            <button class="common-outline-button button-team">Contact Us</button>
+          </div>
+        </div>
+      </section>
+      <!-- ======= end card section========== -->
+    </main>
   </body>
 </html>
