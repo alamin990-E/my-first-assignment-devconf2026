@@ -17,6 +17,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- font awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- ========= navigation bar star t========= -->
@@ -79,7 +89,7 @@
       <section class="common-container common-padding">
         <div class="speaker-heading">
           <!-- speaker section heading -->
-          <h2>Meet the Speakers</h2>
+          <h2 class="common-heading">Meet the Speakers</h2>
         </div>
 
         <!-- speaker cards -->
@@ -126,11 +136,13 @@
       <!--======== speaker section end ======-->
 
       <!-- =======pricing section start======= -->
-      <section class="common-container common-padding">
+      <section class="common-container common-padding pricing-container">
         <!-- pricing heading -->
         <div class="pricing-heading">
-          <h2>Secure Your Spot</h2>
-          <p>Early-bird pricing ends August 15, 2026.</p>
+          <h2 class="common-heading">Secure Your Spot</h2>
+          <p class="common-pragraph">
+            Early-bird pricing ends August 15, 2026.
+          </p>
         </div>
 
         <!-- pricing cards -->
@@ -142,7 +154,7 @@
               <h2 class="card-text-h2">$399</h2>
               <p class="card-text-p2">per person</p>
             </div>
-            <hr>
+            <hr />
             <div>
               <ul>
                 <li>Access to all 3 conference days</li>
@@ -162,7 +174,7 @@
               <h2 class="card-text-h2-pro">$749</h2>
               <p class="card-text-p2-pro">per person</p>
             </div>
-            <hr>
+            <hr />
             <ul class="ul-pro">
               <li>Everything in Standard</li>
               <li>Unlimited workshop access</li>
@@ -180,7 +192,7 @@
               <h2 class="card-text-h2">$5,999</h2>
               <p class="card-text-p2">up to 10 people</p>
             </div>
-            <hr>
+            <hr />
             <ul>
               <li>Everything in Pro (10 seats)</li>
               <li>Dedicated team lounge access</li>
@@ -189,11 +201,37 @@
               <li>Recruitment booth (1 day)</li>
               <li>Priority customer support</li>
             </ul>
-            <button class="common-outline-button button-team">Contact Us</button>
+            <button class="common-outline-button button-team">
+              Contact Us
+            </button>
           </div>
         </div>
       </section>
       <!-- ======= end card section========== -->
+
+      <!--===== start footer section======== -->
+
+      <section class="common-container common-padding footer-section">
+        <!-- footer top -->
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="./assets/footer-logo.png" alt="footer logo" />
+            
+          </div>
+          <div class="social-icon">
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-x-twitter"></i></span>
+            <span><i class="fa-brands fa-whatsapp"></i></span>
+          </div>
+        </div>
+        <!-- footer hr -->
+        <hr>
+        <!-- footer bottom -->
+        <div class="footer-bottom">
+          <p>© 2026 DevConf. All rights reserved.</p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
